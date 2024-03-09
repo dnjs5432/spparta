@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>2024 신년계획 버킷리스트</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+        .bg {
+            background-image: url("./벚꽃배경.gif");
+            background-size: cover;
+            background-position: center;
+            animation: float 20s linear infinite;
+            background-repeat: no-repeat;
+            margin: 0 auto;
+            background-color: #141617;
+        }
+
+
+        .title {
+            margin-top: 50px;
+            color: #E8344E;
+        }
+
+        .msg {
+            color: white;
+            margin-bottom: 48px;
+        }
+
+        .bucket {
+            width: 160px;
+            height: 160px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            margin: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .img1 {
+            background-image: url("./Bucket01.png");
+            color: white;
+        }
+
+        .img2 {
+            background-image: url("./Bucket02.png");
+            color: #E8344E;
+        }
+
+        .img3 {
+            background-image: url("./Bucket03.png");
+            color: #E8344E;
+        }
+
+        .img4 {
+            background-image: url("./Bucket04.png");
+            color: white;
+        }
+
+        .img5 {
+            background-image: url("./Bucket05.png");
+            color: white;
+        }
+
+        .img6 {
+            background-image: url("./Bucket06.png");
+            color: #E8344E;
+        }
+
+        .delete-btn {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border: none;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .delete-btn:hover {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .audio-player {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+
+<body class="bg center">
+    <h1 class="title-t4">SPARTHON Bucket List</h1>
+    <p class="msg">꿈은 꾸는 것이 아닌, 이루는 것이다.</p>
+    <div class="flex-row wrap">
+        <div class="bucket img1-t4 center">
+            나만의 웹 만들기
+            <button class="delete-btn" onclick="deleteItem(this)">X</button>
+        </div>
+        <div class="bucket img2-t4 center">
+            바디프로필 찍기
+            <button class="delete-btn" onclick="deleteItem(this)">X</button>
+        </div>
+        <div class="bucket img3-t4 center">
+            인테리어 꾸미기
+            <button class="delete-btn" onclick="deleteItem(this)">X</button>
+        </div>
+        <div class="bucket img1-t4 center">
+            식물 키우기
+            <button class="delete-btn" onclick="deleteItem(this)">X</button>
+        </div>
+        <div class="bucket img2-t4 center">
+            10킬로그램 감량!
+            <button class="delete-btn" onclick="deleteItem(this)">X</button>
+        </div>
+        <div class="bucket img3-t4 center">
+            내가 만든 웹사이트 자랑하기
+            <button class="delete-btn" onclick="deleteItem(this)">X</button>
+        </div>
+    </div>
+    <button onclick="addItem()">추가</button>
+
+    <audio class="audio-player" controls loop>
+        <source src="bgm.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
